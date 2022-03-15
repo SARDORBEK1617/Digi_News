@@ -19,7 +19,16 @@ class _EmailState extends State<Email> {
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
+                SizedBox(
+                  height: 30,
+                ),
+                InkWell(
+                  child: Icon(Icons.arrow_back),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
                 SizedBox(
                   height: 30,
                 ),
