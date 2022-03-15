@@ -51,7 +51,7 @@ class Diginews extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Image.asset("images/sms.png"),
+                        Image.asset("images/email.png"),
                         const Text(
                           "Continue with Email",
                           textAlign: TextAlign.center,
@@ -132,6 +132,27 @@ class Diginews extends StatelessWidget {
                       ],
                     ),
                   ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                     SignUp()));
+                      },
+                      child: const Text(
+                        "Sign Up",
+                        style: TextStyle(fontSize: 18, color: Colors.red),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(
                   height: 20,

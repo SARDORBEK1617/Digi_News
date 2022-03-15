@@ -25,24 +25,26 @@ class _PasswordState extends State<Password> {
                 SizedBox(
                   height: 30,
                 ),
-
                 Text(
-                  "Reset Password",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  "Reset Password",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
                 SizedBox(
                   height: 20,
                 ),
                 Text(
                   "Select verification method and we will send verification code ",
-                  style: TextStyle(fontSize: 14),),
+                  style: TextStyle(fontSize: 14),
+                ),
                 SizedBox(
                   height: 20,
                 ),
                 InkWell(
                   //onTap: () => Email(),
                   child: Container(
-                    decoration: BoxDecoration(//color: Colors.deepPurple,
+                    decoration: BoxDecoration(
+                      //color: Colors.deepPurple,
                       borderRadius: BorderRadius.circular(20),
-
                     ),
                     height: 56,
                     width: double.infinity,
@@ -50,15 +52,27 @@ class _PasswordState extends State<Password> {
                       children: [
                         CircleAvatar(
                           child: Icon(
-                            Icons.attach_email_outlined,color: Colors.white,),),
+                            Icons.attach_email_outlined,
+                            color: Colors.white,
+                          ),
+                        ),
                         Column(
-                          children: const[
-                            Text("Email",
+                          children: const [
+                            Text(
+                              "Email",
                               //textAlign: TextAlign.center,
-                              style: TextStyle( fontWeight: FontWeight.bold, fontSize: 18,),),
-                            Text("Send to your email",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Text(
+                              "Send to your email",
                               //textAlign: TextAlign.center,
-                              style: TextStyle( fontSize: 14,),),
+                              style: TextStyle(
+                                fontSize: 14,
+                              ),
+                            ),
                           ],
                         ),
                       ],
@@ -68,8 +82,8 @@ class _PasswordState extends State<Password> {
                 TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Email",),
-
+                    labelText: "Email",
+                  ),
                 ),
                 SizedBox(
                   height: 20,
@@ -78,23 +92,33 @@ class _PasswordState extends State<Password> {
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Phone Number",),), //controller: TextEditingController(text: "Email",)),
+                    labelText: "Phone Number",
+                  ),
+                ),
+                //controller: TextEditingController(text: "Email",)),
               ],
             ),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                              ),
+              ),
             ),
             InkWell(
-             // onTap: () => Email(),
+              // onTap: () => Email(),
               child: Container(
-                decoration: BoxDecoration(color: Colors.deepPurple,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 height: 56,
                 width: double.infinity,
-                child: const Text("Continue",textAlign: TextAlign.center,style: TextStyle( fontSize: 30,),),
+                child: const Text(
+                  "Continue",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
               ),
             ),
           ],

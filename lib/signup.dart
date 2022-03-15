@@ -23,8 +23,18 @@ class _SignUpState extends State<SignUp> {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            SizedBox(
+              height: 30,
+            ),
+            InkWell(
+              child: Icon(Icons.arrow_back),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -124,14 +134,14 @@ class _SignUpState extends State<SignUp> {
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                height: 56,
+                height: 50,
                 width: double.infinity,
                 child: const Text(
                   "Create account",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30,
+                    fontSize: 26,
                   ),
                 ),
               ),
